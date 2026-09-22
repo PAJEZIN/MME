@@ -147,7 +147,7 @@ h2{font-size:2.1rem;text-align:center;margin-bottom:12px;}
 @keyframes scroll-left{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 @keyframes scroll-right{from{transform:translateX(-50%);}to{transform:translateX(0);}}
 .cover-card{
-  width:150px;height:200px;flex-shrink:0;
+  width:280px;aspect-ratio:969/686;flex-shrink:0;
   border-radius:0.75rem;overflow:hidden;
   border:1px solid var(--border);
   box-shadow:0 4px 10px rgba(0,0,0,0.06);
@@ -589,7 +589,7 @@ document.getElementById('closeBanner').addEventListener('click', function(){
   var materias = [
     'Matemática','Física','Química','Biologia','História','Geografia',
     'Filosofia','Sociologia','Português','Literatura','Redação','Inglês',
-    'Espanhol','Artes','Educação Física','Atualidades'
+    'Espanhol','Artes','Educação Física','TIC'
   ];
   function slugify(s){
     return s.toLowerCase()
