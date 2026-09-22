@@ -186,7 +186,7 @@ h2{font-size:2.1rem;text-align:center;margin-bottom:12px;}
   display:inline-block;background:var(--urgent);color:#fff;font-size:0.8rem;font-weight:700;
   padding:4px 14px;border-radius:999px;margin-bottom:12px;
 }
-.bonus-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px 32px;max-width:820px;margin:0 auto;}
+.bonus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px 24px;max-width:920px;margin:0 auto;}
 .bonus-card{
   position:relative;background:#fff;border:1px solid var(--border);border-radius:0.75rem;
   padding:52px 22px 24px;text-align:center;margin-top:36px;
@@ -407,40 +407,31 @@ footer{text-align:center;padding:32px 0;color:var(--muted);font-size:0.85rem;}
     <div class="bonus-header">
       <span class="tag">BÔNUS EXCLUSIVOS</span>
       <h2>E não é só isso... Ainda tem mais!</h2>
-      <p class="section-sub">4 bônus exclusivos pra você turbinar sua revisão.</p>
+      <p class="section-sub">3 bônus exclusivos pra você turbinar sua revisão.</p>
     </div>
     <div class="bonus-grid">
       <div class="bonus-card">
         <span class="bonus-tag">BÔNUS #1</span>
         <div class="bonus-img">
-          <img src="bonus-1.png" alt="Bônus 1 - Cronograma de Estudos"
-            onerror="this.style.display='none'; this.parentElement.textContent='🗓️';" style="width:100%;height:100%;object-fit:contain;">
-        </div>
-        <h3>Cronograma de Estudos Enem</h3>
-        <p>Planejamento pronto pra você organizar sua revisão até o dia da prova.</p>
-      </div>
-      <div class="bonus-card">
-        <span class="bonus-tag">BÔNUS #2</span>
-        <div class="bonus-img">
-          <img src="bonus-2.png" alt="Bônus 2 - Banco de Questões"
+          <img src="bonus-2.png" alt="Bônus 1 - Banco de Questões"
             onerror="this.style.display='none'; this.parentElement.textContent='📝';" style="width:100%;height:100%;object-fit:contain;">
         </div>
         <h3>Banco de Questões Comentadas</h3>
         <p>Questões dos últimos Enems com resolução comentada passo a passo.</p>
       </div>
       <div class="bonus-card">
-        <span class="bonus-tag">BÔNUS #3</span>
+        <span class="bonus-tag">BÔNUS #2</span>
         <div class="bonus-img">
-          <img src="bonus-3.png" alt="Bônus 3 - Guia de Redação"
+          <img src="bonus-3.png" alt="Bônus 2 - Guia de Redação"
             onerror="this.style.display='none'; this.parentElement.textContent='✍️';" style="width:100%;height:100%;object-fit:contain;">
         </div>
         <h3>Guia de Redação Nota 1000</h3>
         <p>Passo a passo pra estruturar uma redação nota máxima no Enem.</p>
       </div>
       <div class="bonus-card">
-        <span class="bonus-tag">BÔNUS #4</span>
+        <span class="bonus-tag">BÔNUS #3</span>
         <div class="bonus-img">
-          <img src="bonus-4.png" alt="Bônus 4 - Checklist de Revisão"
+          <img src="bonus-4.png" alt="Bônus 3 - Checklist de Revisão"
             onerror="this.style.display='none'; this.parentElement.textContent='✅';" style="width:100%;height:100%;object-fit:contain;">
         </div>
         <h3>Checklist de Revisão Final</h3>
@@ -465,7 +456,6 @@ footer{text-align:center;padding:32px 0;color:var(--muted);font-size:0.85rem;}
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>100 mapas mentais das 16 matérias</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>Acesso vitalício</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>Compatível com qualquer dispositivo</li>
-          <li class="disabled"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>Cronograma de Estudos</li>
           <li class="disabled"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>Banco de Questões Comentadas</li>
           <li class="disabled"><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>Guia de Redação + Checklist Final</li>
         </ul>
@@ -483,7 +473,6 @@ footer{text-align:center;padding:32px 0;color:var(--muted);font-size:0.85rem;}
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>100 mapas mentais das 16 matérias</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>Acesso vitalício</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>Compatível com qualquer dispositivo</li>
-          <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>🎁 Cronograma de Estudos</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>🎁 Banco de Questões Comentadas</li>
           <li><svg viewBox="0 0 24 24"><path d="M9 16.2l-3.5-3.5L4 14.2 9 19.2 20 8.2l-1.5-1.5z"/></svg>🎁 Guia de Redação + Checklist Final</li>
         </ul>
